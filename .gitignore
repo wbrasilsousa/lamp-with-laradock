@@ -22,6 +22,8 @@
 !/.devcontainer/devcontainer.example.json
 !/.devcontainer/docker-compose.extend-example.yml
 
+/.vscode/*
+
 docker-compose.custom.yml
 
 .DS_Store
