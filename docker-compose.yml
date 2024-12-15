@@ -318,8 +318,14 @@ services:
       depends_on:
         - php-fpm
       networks:
-        - frontend
-        - backend
+        frontend:
+          aliases:
+            - front-greentech.test
+            - api-greentech.test
+        backend:
+          aliases:
+            - front-greentech.test
+            - api-greentech.test
 
 ### MySQL ################################################
     mysql:
